@@ -3,16 +3,13 @@ import axios from 'axios';
 import './textarea.scss';
 
 const TextareaComponent = () => {
-  // Define a state to hold the textarea value and the displayed text
   const [inputText, setInputText] = useState('');
   const [displayedText, setDisplayedText] = useState('');
 
-  // Handle textarea changes
   const handleInputChange = event => {
     setInputText(event.target.value);
   };
 
-  // Handle button click
   const handleSubmit = async (event) => {
     event.preventDefault();
 
